@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato&family=Sen&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+header {
+  background: #FEF8F1;
+  position: sticky;
+  top: 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0;
+}
+header nav .menu {
+  justify-content: space-around;
+  width: 55%;
+  display: flex;
+  padding-left: 25px;
+  gap: 20px;
+  font-family: "Sen";
+}
+header nav .menu a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+header nav .menu a:hover {
+  color: rgb(255, 170, 0);
+}
+header nav .menu a li {
+  font-size: 0.95rem;
+  list-style: none;
+  font-weight: 800;
+}
+
+.heroSection {
+  width: 100%;
+  height: 87vh;
+  color: #fff;
+  background-image: url("https://www.himalayanjava.com/img/banner/new-home-banner.jpg");
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroSection .text {
+  width: 32%;
+  text-align: center;
+}
+.heroSection .text h1 {
+  font-size: 4rem;
+  font-family: "Dancing Script";
+}
+.heroSection .text p {
+  padding: 0;
+  margin: 0;
+}
+.heroSection .text p:nth-child(5) {
+  margin-bottom: 3rem;
+}
+.heroSection .text .learn {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Sen";
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid white;
+  box-shadow: inset 0 0 0 0 #fff;
+  padding: 15px 60px;
+  transition: all 0.4s ease-in-out;
+}
+.heroSection .text .learn:hover {
+  color: #000;
+  box-shadow: inset 250px 0 0 0 #fff;
+}
+
+.services {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.services .items {
+  padding: 20px 60px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.coffeeNear {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.coffeeNear img {
+  filter: opacity(0.15);
+  position: absolute;
+  z-index: -100;
+}
+.coffeeNear h1 {
+  font-family: "Dancing Script";
+  font-size: 4rem;
+}
+.coffeeNear p {
+  padding: 0;
+  margin: 0;
+}
+.coffeeNear p:nth-child(5) {
+  margin-bottom: 20px;
+}
+.coffeeNear .findUs {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #4D332F;
+  font-family: "Sen";
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid #4D332F;
+  box-shadow: inset 0 0 0 0 #fff;
+  padding: 15px 60px;
+  transition: all 0.4s ease-in-out;
+}
+.coffeeNear .findUs:hover {
+  color: #fff;
+  box-shadow: inset 250px 0 0 0 #4D332F;
+}
+
+#footer {
+  height: 75vh;
+  width: 100%;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding-top: 3rem;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
