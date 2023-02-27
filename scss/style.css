@@ -10,6 +10,7 @@ header {
   background: #FEF8F1;
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
 header nav {
   display: flex;
@@ -25,6 +26,11 @@ header nav .menu {
   gap: 20px;
   font-family: "Sen";
 }
+@media screen and (max-width: 900px) {
+  header nav .menu {
+    display: none;
+  }
+}
 header nav .menu a {
   text-decoration: none;
   color: #000;
@@ -38,6 +44,15 @@ header nav .menu a li {
   list-style: none;
   font-weight: 800;
 }
+header nav .faBar {
+  display: none;
+  color: #000;
+}
+@media screen and (max-width: 900px) {
+  header nav .faBar {
+    display: inline-block;
+  }
+}
 
 .heroSection {
   width: 100%;
@@ -45,6 +60,7 @@ header nav .menu a li {
   color: #fff;
   background-image: url("https://www.himalayanjava.com/img/banner/new-home-banner.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,13 +69,28 @@ header nav .menu a li {
   width: 32%;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .heroSection .text {
+    width: 85%;
+  }
+}
 .heroSection .text h1 {
   font-size: 4rem;
   font-family: "Dancing Script";
 }
+@media screen and (max-width: 600px) {
+  .heroSection .text h1 {
+    font-size: 2.5rem;
+  }
+}
 .heroSection .text p {
   padding: 0;
   margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .heroSection .text p {
+    font-size: 1rem;
+  }
 }
 .heroSection .text p:nth-child(5) {
   margin-bottom: 3rem;
@@ -76,6 +107,11 @@ header nav .menu a li {
   padding: 15px 60px;
   transition: all 0.4s ease-in-out;
 }
+@media screen and (max-width: 600px) {
+  .heroSection .text .learn {
+    font-size: 1rem;
+  }
+}
 .heroSection .text .learn:hover {
   color: #000;
   box-shadow: inset 250px 0 0 0 #fff;
@@ -83,7 +119,8 @@ header nav .menu a li {
 
 .services {
   width: 100%;
-  height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -97,31 +134,41 @@ header nav .menu a li {
 
 .coffeeNear {
   width: 100%;
-  height: 100vh;
-  position: relative;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   flex-direction: column;
   text-align: center;
 }
 .coffeeNear img {
-  filter: opacity(0.15);
-  position: absolute;
-  z-index: -100;
+  width: 100%;
+  opacity: 0.3;
 }
-.coffeeNear h1 {
+.coffeeNear div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: absolute;
+  z-index: 111;
+  height: -moz-min-content;
+  height: min-content;
+}
+.coffeeNear div h1 {
   font-family: "Dancing Script";
   font-size: 4rem;
 }
-.coffeeNear p {
+.coffeeNear div p {
   padding: 0;
   margin: 0;
 }
-.coffeeNear p:nth-child(5) {
+.coffeeNear div p:nth-child(4) {
   margin-bottom: 20px;
 }
-.coffeeNear .findUs {
+.coffeeNear div .findUs {
   font-size: 1rem;
   text-transform: uppercase;
   color: #4D332F;
@@ -133,7 +180,7 @@ header nav .menu a li {
   padding: 15px 60px;
   transition: all 0.4s ease-in-out;
 }
-.coffeeNear .findUs:hover {
+.coffeeNear div .findUs:hover {
   color: #fff;
   box-shadow: inset 250px 0 0 0 #4D332F;
 }
