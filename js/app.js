@@ -13,6 +13,13 @@ gsap.from(".items", {
 
 // toggle menu bar
 function toggle(){
-    let a = document.querySelector(".menu");
-    a.style.display = ""
+    let a = document.querySelector(".Res_menu");
+    if (a.style.display === "none"){
+        a.style.display = "flex";
+        a.style.flexDirection = "column";
+
+    }else{
+        a.style.display = "none";
+    }
+
 }

@@ -54,6 +54,26 @@ header nav .faBar {
   }
 }
 
+.Res_menu {
+  display: none;
+  position: sticky;
+  top: 0;
+}
+@media screen and (max-width: 900px) {
+  .Res_menu {
+    display: none;
+  }
+}
+.Res_menu a {
+  text-decoration: none;
+  font-family: "Sen";
+  font-size: 1.5rem;
+  color: #000;
+}
+.Res_menu a li {
+  list-style: none;
+}
+
 .heroSection {
   width: 100%;
   height: 87vh;
@@ -70,6 +90,11 @@ header nav .faBar {
   text-align: center;
 }
 @media screen and (max-width: 600px) {
+  .heroSection .text {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 900px) {
   .heroSection .text {
     width: 85%;
   }
